@@ -7,7 +7,6 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load('melbourne_house_price_model.pkl')
 
-
 @app.route('/', methods=['GET'])
 def main():
     return jsonify({'message': 'Hello from Python'})
